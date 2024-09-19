@@ -1,0 +1,112 @@
+/* Homepage.css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.homepage-container {
+    padding: 20px;
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto;
+}
+h2{
+    color: white;
+    margin-bottom: 10px;
+}
+
+meeting-id{
+    color: #ddd;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.columns-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.create-meeting-column,
+.join-link-column {
+    flex: 1;
+    background-color: #434347;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.create-meeting-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.join-link-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.meeting-form,
+.link-form {
+    margin-bottom: 20px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.join-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.join-button:hover {
+    background-color: #0056b3;
+}
+
+.qr-code-container {
+    text-align: center;
+    margin-top: 20px;
+
+}
+.qr-code-container h3{
+    color: white;
+
+}
+.qr-code-container p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+    
+}
+.qr-code-container h3 {
+    margin-bottom: 10px;
+}
+.mic-toggle-button{
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 6px 8px;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}

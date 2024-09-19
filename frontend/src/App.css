@@ -1,0 +1,105 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure body and html take full height */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Fullscreen container for video */
+.video-page-container {
+    width: 100%;
+    height: 100vh;
+    background-color: #000; /* Black background in case video fails to load */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Allows positioning of child elements */
+    overflow: hidden; /* Ensures no scrollbars */
+}
+
+/* Fullscreen video element */
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures video covers the container while maintaining aspect ratio */
+}
+
+/* Optional: Overlay content on video page */
+.video-overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 10;
+    color: white;
+    font-size: 1.2rem;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for contrast */
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+}
+
+/* Base button styling */
+button {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px; /* More rounded corners */
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+button:hover {
+    background-color: #1662c4;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+}
+
+/* Input field styling */
+input {
+    padding: 0.75rem; /* Increased padding for larger click area */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s;
+}
+
+input:focus {
+    border-color: #1a73e8;
+    outline: none;
+    box-shadow: 0 0 5px rgba(26, 115, 232, 0.5); /* Blue glow on focus */
+}
+
+/* Homepage container styling */
+.homepage-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #f1f3f4, #e2e8ec); /* Subtle gradient */
+}
+
+.join-meeting-box {
+    text-align: center;
+    background-color: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.join-meeting-box:hover {
+    transform: translateY(-5px); /* Subtle lift on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
